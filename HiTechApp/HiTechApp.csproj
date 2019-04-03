@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{574362E5-3A83-4007-8BE1-6488172D858F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HiTechApp</RootNamespace>
+    <AssemblyName>HiTechApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Delete_Item_Author_Publisher_info">
+      <HintPath>..\..\..\Form Control\Delete_Item_Author_Publisher_info\Delete_Item_Author_Publisher_info\bin\Debug\Delete_Item_Author_Publisher_info.dll</HintPath>
+    </Reference>
+    <Reference Include="HCL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Class Library\HCL\HCL\bin\Debug\HCL.dll</HintPath>
+    </Reference>
+    <Reference Include="Sales_Form">
+      <HintPath>..\..\..\Form Control\Update_client_info\Sales_Form\Sales_Form\bin\Debug\Sales_Form.dll</HintPath>
+    </Reference>
+    <Reference Include="Save_new_Author">
+      <HintPath>..\..\..\Form Control\Save_new_Author\Save_new_Author\bin\Debug\Save_new_Author.dll</HintPath>
+    </Reference>
+    <Reference Include="Save_New_Client">
+      <HintPath>..\..\..\Form Control\Save_New_Client\Save_New_Client\bin\Debug\Save_New_Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Save_New_Items">
+      <HintPath>..\..\..\Form Control\Save_New_Items\Save_New_Items\bin\Debug\Save_New_Items.dll</HintPath>
+    </Reference>
+    <Reference Include="Save_New_Publisher">
+      <HintPath>..\..\..\Form Control\Save_New_Publisher\Save_New_Publisher\bin\Debug\Save_New_Publisher.dll</HintPath>
+    </Reference>
+    <Reference Include="Search_Clnt">
+      <HintPath>..\..\..\Form Control\Search_Clnt\Search_Clnt\bin\Debug\Search_Clnt.dll</HintPath>
+    </Reference>
+    <Reference Include="Search_Employee">
+      <HintPath>..\..\..\Form Control\Search_Employee\Search_Employee\bin\Debug\Search_Employee.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Update_Emp">
+      <HintPath>..\..\..\Form Control\Update_Emp\Update_Emp\bin\Debug\Update_Emp.dll</HintPath>
+    </Reference>
+    <Reference Include="Update_Items">
+      <HintPath>..\..\..\Form Control\Update_Items\Update_Items\bin\Debug\Update_Items.dll</HintPath>
+    </Reference>
+    <Reference Include="Update_password">
+      <HintPath>..\..\..\Form Control\Update_password\Update_password\bin\Debug\Update_password.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GUI\AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Form_Add_Items_To_Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form_Add_Items_To_Order.Designer.cs">
+      <DependentUpon>Form_Add_Items_To_Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Form_Add_new_author.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form_Add_new_author.Designer.cs">
+      <DependentUpon>Form_Add_new_author.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Form_Add_New_Publisher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form_Add_New_Publisher.Designer.cs">
+      <DependentUpon>Form_Add_New_Publisher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Form_Delete_Orders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form_Delete_Orders.Designer.cs">
+      <DependentUpon>Form_Delete_Orders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Form_Inventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form_Inventory.Designer.cs">
+      <DependentUpon>Form_Inventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Form_List_Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form_List_Search.Designer.cs">
+      <DependentUpon>Form_List_Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Form_List_Search_Client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form_List_Search_Client.Designer.cs">
+      <DependentUpon>Form_List_Search_Client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Form_List_Search_Emp_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form_List_Search_Emp_User.Designer.cs">
+      <DependentUpon>Form_List_Search_Emp_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Form_List_Search_Orders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form_List_Search_Orders.Designer.cs">
+      <DependentUpon>Form_List_Search_Orders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Form_LogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form_LogIn.Designer.cs">
+      <DependentUpon>Form_LogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Form_MIS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form_MIS.Designer.cs">
+      <DependentUpon>Form_MIS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Form_OrderClerk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form_OrderClerk.Designer.cs">
+      <DependentUpon>Form_OrderClerk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Form_Remove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form_Remove.Designer.cs">
+      <DependentUpon>Form_Remove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Form_Sales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form_Sales.Designer.cs">
+      <DependentUpon>Form_Sales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Form_Save_New_Clients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form_Save_New_Clients.Designer.cs">
+      <DependentUpon>Form_Save_New_Clients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Form_Save_New_Emp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form_Save_New_Emp.Designer.cs">
+      <DependentUpon>Form_Save_New_Emp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Form_Save_New_Items.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form_Save_New_Items.Designer.cs">
+      <DependentUpon>Form_Save_New_Items.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Form_Save_New_Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form_Save_New_Order.Designer.cs">
+      <DependentUpon>Form_Save_New_Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Form_Save_New_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form_Save_New_User.Designer.cs">
+      <DependentUpon>Form_Save_New_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Form_Update_Clients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form_Update_Clients.Designer.cs">
+      <DependentUpon>Form_Update_Clients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Form_Update_Emp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form_Update_Emp.Designer.cs">
+      <DependentUpon>Form_Update_Emp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Form_Update_Items.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form_Update_Items.Designer.cs">
+      <DependentUpon>Form_Update_Items.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Form_Update_Orders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form_Update_Orders.Designer.cs">
+      <DependentUpon>Form_Update_Orders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Form_Update_Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form_Update_Password.Designer.cs">
+      <DependentUpon>Form_Update_Password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form_Add_Items_To_Order.resx">
+      <DependentUpon>Form_Add_Items_To_Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form_Add_new_author.resx">
+      <DependentUpon>Form_Add_new_author.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form_Add_New_Publisher.resx">
+      <DependentUpon>Form_Add_New_Publisher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form_Delete_Orders.resx">
+      <DependentUpon>Form_Delete_Orders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form_Inventory.resx">
+      <DependentUpon>Form_Inventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form_List_Search.resx">
+      <DependentUpon>Form_List_Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form_List_Search_Client.resx">
+      <DependentUpon>Form_List_Search_Client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form_List_Search_Emp_User.resx">
+      <DependentUpon>Form_List_Search_Emp_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form_List_Search_Orders.resx">
+      <DependentUpon>Form_List_Search_Orders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form_LogIn.resx">
+      <DependentUpon>Form_LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form_MIS.resx">
+      <DependentUpon>Form_MIS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form_OrderClerk.resx">
+      <DependentUpon>Form_OrderClerk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form_Remove.resx">
+      <DependentUpon>Form_Remove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form_Sales.resx">
+      <DependentUpon>Form_Sales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form_Save_New_Clients.resx">
+      <DependentUpon>Form_Save_New_Clients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form_Save_New_Emp.resx">
+      <DependentUpon>Form_Save_New_Emp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form_Save_New_Items.resx">
+      <DependentUpon>Form_Save_New_Items.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form_Save_New_Order.resx">
+      <DependentUpon>Form_Save_New_Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form_Save_New_User.resx">
+      <DependentUpon>Form_Save_New_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form_Update_Clients.resx">
+      <DependentUpon>Form_Update_Clients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form_Update_Emp.resx">
+      <DependentUpon>Form_Update_Emp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form_Update_Items.resx">
+      <DependentUpon>Form_Update_Items.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form_Update_Orders.resx">
+      <DependentUpon>Form_Update_Orders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form_Update_Password.resx">
+      <DependentUpon>Form_Update_Password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ht logo.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
